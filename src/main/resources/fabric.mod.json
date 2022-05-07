@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "mutationlib",
+  "version": "${version}",
+  "name": "MutationLib",
+  "description": "A Fabric MC mod about updating registries on the fly, without restarting the client or the server",
+  "authors": [
+    "Nerjal_Nosk"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/MutationLib/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.nerjal.mutation_lib.mutationlib.client.MutationLibClient"
+    ],
+    "main": [
+      "com.nerjal.mutation_lib.mutationlib.MutationLib"
+    ]
+  },
+  "mixins": [
+    "MutationLib.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.4",
+    "fabric": "*",
+    "minecraft": "1.18.2"
+  }
+}
